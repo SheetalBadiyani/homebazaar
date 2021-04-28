@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>::: Welcome To Home Bazaar :::</title>
+ 
+</head>
+<body>
+    
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white mb-3">
+        <div class="flex-row d-flex">
+            <button type="button" class="navbar-toggler mr-2 " data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" width="230"  class="img-responsive" alt="Logo">
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link bigFont" href="#myAlert" data-toggle="collapse">Buy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bigFont" href="#" data-target="#myModal" data-toggle="modal">Sell</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bigFont" href="#" data-target="#myModal" data-toggle="modal">Rent</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                User Login
+              </button>
+              
+            
+        </div>
+    </nav>
+
+
+
+
+<div class="container loginForm">
+    <div class="transbox"> </div>	
+
+                <div class="row box justify-content-center">
+                    <div class="col-md-12 col-lg-5  col-sm-12 loginForm-left d-none d-sm-block">
+                  
+                        <h2>Existing User</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  quid harum et accusantium accusamus.</p>
+                         <p>To Login as a existing user</p>
+                        <input type="submit" name="" value="LOGIN "/><br/>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                      <div class="row">
+                          <div class="col-md-12 col-sm-12 loginForm-right"> 
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="loginForm-heading">SIGN UP FORM</h3>
+                                <div class="loginForm-form">
+                                    <div class="row">
+                                        <button type="button" class="btn btn-light">Broker</button>
+                                        <button type="button" class="btn btn-light">Builder</button>
+                                        <button type="button" class="btn btn-light">Owner</button>
+                                        <button type="button" class="btn btn-light">Buyer</button>
+                                        <button type="button" class="btn btn-light">Tenant</button>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Full Name*" value="" />
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                  
+                                        <div class="form-group">
+                                            <input type="text"  minlength="10" maxlength="10" class="form-control" placeholder="Mobile No*" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Company Name" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control"  placeholder="Rera loginForm Number" value="" />
+                                        </div>
+                                   
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email  Id *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Company Logo</label>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="custom-select" id="inlineFormCustomSelectPref">
+                                                <option selected>Select Rera State</option>
+                                                <option value="1">Choose 1</option>
+                                                <option value="2">Choose 2</option>
+                                                <option value="3">Choose 3</option>
+                                              </select>
+                                        </div>
+                                   
+                                   
+                                      </div>
+                                      
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Company Address" value="" />
+                                </div> 
+                                <div class="form-group">
+                                    <div class="maxl">
+                                        <label class="radio inline"> 
+                                            <input type="checkbox" name="gender" value="check" checked>
+                                            <span>  I Accept all terms & conditions </span> 
+                                        </label>
+                                   
+                                    </div>
+                                </div>
+                                <input type="submit" class="btnloginForm"  value="SIGN UP"/>
+                            </div>
+                            </div>
+                            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3  class="loginForm-heading">Apply as a Hirer</h3>
+                                <div class="row loginForm-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                                <option>Chooose 1</option>
+                                                <option>Chooose 2</option>
+                                                <option>Chooose 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                                        </div>
+                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+   
+</div>				                            
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+        </body>
+        </html>
