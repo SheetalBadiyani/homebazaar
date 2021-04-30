@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::: Welcome To Home Bazaar :::</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href=" https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white mb-3">
+        <div class="flex-row d-flex">
+            <button type="button" class="navbar-toggler mr-2 " data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" width="230"  class="img-responsive" alt="Logo">
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link bigFont" href="#myAlert" data-toggle="collapse">Buy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bigFont" href="#" data-target="#myModal" data-toggle="modal">Sell</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bigFont" href="#" data-target="#myModal" data-toggle="modal">Rent</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                <i class="fa fa-user"></i>
+              </button>
+              
+            
+        </div>
+    </nav>
+
+
+
+
+<div class="container loginForm">
+    <div class="transbox"> </div>	
+
+    <!--modal-->
+     <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+      
+          
+            <div class="login-form">
+                <form action="/examples/actions/confirmation.php" method="post">
+
+                    <div class="text-center social-btn">
+                        <a href="#" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> Sign in with <b>Facebook</b></a>
+                        <a href="#" class="btn btn-info btn-block"><i class="fa fa-twitter"></i> Sign in with <b>Twitter</b></a>
+                        <a href="#" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Sign in with <b>Google</b></a>
+                    </div>
+                    <div class="or-seperator"><i>or</i></div>
+                    <div class="form-group">
+                        <div class="input-group">                
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <span class="fa fa-user"></span>
+                                </span>                    
+                            </div>
+                            <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-lock"></i>
+                                </span>                    
+                            </div>
+                            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                        </div>
+                    </div>        
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block login-btn">Sign in</button>
+                    </div>
+                    <div class="clearfix">
+                        <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
+                        <a href="#" class="float-right text-success">Forgot Password?</a>
+                    </div>  
+                    
+                </form>
+                <div class="hint-text">Don't have an account? <a href="#" class="text-success">Register Now!</a></div>
+            </div>
+                         
+             
+            
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <!-- modal end-->
+
+
+
+
+    <!--sidebar menu start-->
+
+    <div class="page-wrapper chiller-theme">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a href="#">Homebazaar.com</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+
+
+                <div class="sidebar-menu">
+                    <ul>
+
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-gem"></i>
+                                <span>Buy</span>
+
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Buy With HomeBazaar.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">No Brokerage Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home Buying Guide</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-gem"></i>
+                                <span>Sell</span>
+                                <!--<span class="badge badge-pill badge-danger">3</span>-->
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Sell with HomeBazaar.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home Worth Calculator</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home Selling Guide</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>Rent</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Rent With HomeBazaar.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">No Brokerage Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Renters Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Landlord Services</a>
+                                    </li>
+                                 </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>How it works?</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Buyer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Broker</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Builder</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Landlord</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Owner Resale</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tenant</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>About Us</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Awards</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Get Franchisee</a>
+                                    </li>
+                               </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>Contact Us</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>All Top Cities</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Properties in Mumbai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Properties in Pune</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Properties in Bangalore</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Properties in Chennai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Properties in Noida</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Properties in Lonavala</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>All Top Developers</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Developers in Mumbai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Developers in Pune</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Developers in Bangalore</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Developers in Chennai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Developers in Noida</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Developers in Lonavala</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>Home Loan</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home Loan EMI Calculator</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home Loan Eligibility Calculator</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>Other Useful Links</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Search URL's</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About URL's</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Developers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                   </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer">
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge badge-pill badge-warning notification">3</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-envelope"></i>
+                    <span class="badge badge-pill badge-success notification">7</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-power-off"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+   
+    <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+    <!--sidebar menu- end-->
+
+
+
+                <div class="row box justify-content-center">
+                    <div class="col-md-12 col-lg-5  col-sm-12 loginForm-left d-none d-sm-block">
+                  
+                        <h2>Existing User</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  quid harum et accusantium accusamus.</p>
+                         <p>To Login as a existing user</p>
+                        <input type="submit" name="" value="LOGIN "/><br/>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                      <div class="row">
+                          <div class="col-md-12 col-sm-12 loginForm-right"> 
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="loginForm-heading">SIGN UP FORM</h3>
+                                <div class="loginForm-form">
+                                    <div class="row">
+                                        <button type="button" class="btn btn-light">Broker</button>
+                                        <button type="button" class="btn btn-light">Builder</button>
+                                        <button type="button" class="btn btn-light">Owner</button>
+                                        <button type="button" class="btn btn-light">Buyer</button>
+                                        <button type="button" class="btn btn-light">Tenant</button>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Full Name*" value="" />
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                  
+                                        <div class="form-group">
+                                            <input type="text"  minlength="10" maxlength="10" class="form-control" placeholder="Mobile No*" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Company Name" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control"  placeholder="Rera loginForm Number" value="" />
+                                        </div>
+                                   
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email  Id *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Company Logo</label>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="custom-select" id="inlineFormCustomSelectPref">
+                                                <option selected>Select Rera State</option>
+                                                <option value="1">Choose 1</option>
+                                                <option value="2">Choose 2</option>
+                                                <option value="3">Choose 3</option>
+                                              </select>
+                                        </div>
+                                   
+                                   
+                                      </div>
+                                      
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Company Address" value="" />
+                                </div> 
+                                <div class="form-group">
+                                    <div class="maxl">
+                                        <label class="radio inline"> 
+                                            <input type="checkbox" name="gender" value="check" checked>
+                                            <span>  I Accept all terms & conditions </span> 
+                                        </label>
+                                   
+                                    </div>
+                                </div>
+                                <input type="submit" class="btnloginForm"  value="SIGN UP"/>
+                            </div>
+                            </div>
+                            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3  class="loginForm-heading">Apply as a Hirer</h3>
+                                <div class="row loginForm-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                                <option>Chooose 1</option>
+                                                <option>Chooose 2</option>
+                                                <option>Chooose 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                                        </div>
+                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+   
+</div>				                            
+
+<script src="./js/jquery.min.js"></script>
+<script>
+    jQuery(function ($) {
+
+        $(".sidebar-dropdown > a").click(function () {
+            $(".sidebar-submenu").slideUp(200);
+            if (
+                $(this)
+                    .parent()
+                    .hasClass("active")
+            ) {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                    .parent()
+                    .removeClass("active");
+            } else {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                    .next(".sidebar-submenu")
+                    .slideDown(200);
+                $(this)
+                    .parent()
+                    .addClass("active");
+            }
+        });
+
+        $("#close-sidebar").click(function () {
+            $(".page-wrapper").removeClass("toggled");
+        });
+        $("#show-sidebar").click(function () {
+            $(".page-wrapper").addClass("toggled");
+        });
+
+
+
+
+    });
+</script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+        </body>
+        </html>
