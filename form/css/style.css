@@ -717,7 +717,7 @@ div.transbox {
   
     /* topbar fixed */
   
-  .fixed-top{z-index: 9000;}
+  .fixed-top{z-index: 1000;}
 
   .editIcon i, .deleteIcon i{
   font-size: 14px;
